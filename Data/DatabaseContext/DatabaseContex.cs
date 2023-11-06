@@ -1,18 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Data.Entity;
+﻿using System.Data.Entity;
 
 namespace DataLayer
 {
-	public class DatabaseContex : DbContext
+	public class DatabaseContext : DbContext
 	{
 		/// <summary>
 		/// Constructor
 		/// </summary>
-		public DatabaseContex() : base()
+		public DatabaseContext() : base()
 		{
 		}
 

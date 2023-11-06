@@ -51,20 +51,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DatabaseContex\DatabaseContex.cs" />
+    <Compile Include="DatabaseContext\DatabaseContex.cs" />
     <Compile Include="Migrations\202311051223441_Initial_Database.cs" />
     <Compile Include="Migrations\202311051223441_Initial_Database.designer.cs">
       <DependentUpon>202311051223441_Initial_Database.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202311051233449_Initial_Database1.cs" />
-    <Compile Include="Migrations\202311051233449_Initial_Database1.designer.cs">
-      <DependentUpon>202311051233449_Initial_Database1.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Page.cs" />
     <Compile Include="Models\PageComment.cs" />
     <Compile Include="Models\PageGroup.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\IPageRepository - Copy.cs" />
+    <Compile Include="Repositories\IPageCommentRepository.cs" />
+    <Compile Include="Repositories\IPageGroupRepository.cs" />
+    <Compile Include="Servises\PageGroupRepository.cs" />
+    <Compile Include="Servises\PageCommentRepository.cs" />
+    <Compile Include="Servises\PageRepository .cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -73,9 +75,6 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202311051223441_Initial_Database.resx">
       <DependentUpon>202311051223441_Initial_Database.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202311051233449_Initial_Database1.resx">
-      <DependentUpon>202311051233449_Initial_Database1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
